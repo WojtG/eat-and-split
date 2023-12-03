@@ -133,7 +133,6 @@ label {
 
 label::first-letter {
   display: inline-block;
-  margin-right: 4px;
   font-size: 1.8rem;
 }
 
@@ -147,6 +146,7 @@ select {
   border: 1px solid var(--color-light);
   border-radius: 4px;
   transition: 0.3s;
+  width: 100%;
 }
 
 input:focus,
@@ -166,4 +166,7 @@ form h2 {
   text-transform: uppercase;
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
+}
+.special {
+  margin-bottom: 1110px;
 }
