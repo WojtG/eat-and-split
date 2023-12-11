@@ -16,7 +16,7 @@ function FriendElement({ friend }) {
         </p>
       )}
       {friend.balance === 0 && <p>You and {friend.name} are even!</p>}
-      <Button>Submit</Button>
+      <Button>Select</Button>
     </li>
   );
 }
