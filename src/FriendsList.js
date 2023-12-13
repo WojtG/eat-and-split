@@ -1,11 +1,16 @@
 import { useState } from "react";
 import FriendElement from "./FriendElement";
 
-function FriendsList({ friends }) {
+function FriendsList({ friends, onSelectedFriends, selectedFriend }) {
   return (
     <ul>
       {friends.map((friend) => (
-        <FriendElement friend={friend} key={friend.id} />
+        <FriendElement
+          onSelectedFriends={onSelectedFriends}
+          friend={friend}
+          key={friend.id}
+          selectedFriend={selectedFriend}
+        />
       ))}
     </ul>
   );

@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-function FriendElement({ friend }) {
+function FriendElement({ friend, onSelectedFriends, selectedFriend }) {
   return (
     <li>
       <img src={friend.image} alt={friend.name} />
@@ -16,7 +16,7 @@ function FriendElement({ friend }) {
         </p>
       )}
       {friend.balance === 0 && <p>You and {friend.name} are even!</p>}
-      <Button>Select</Button>
+      <Button onClick={() => onSelectedFriends(friend)}>Select</Button>
     </li>
   );
 }
