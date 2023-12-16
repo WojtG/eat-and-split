@@ -18,7 +18,6 @@ function FriendElement({ friend, onSelectedFriends, selectedFriend }) {
       )}
       {friend.balance === 0 && <p>You and {friend.name} are even!</p>}
       <Button onClick={() => onSelectedFriends(friend)}>
-        {" "}
         {isSelected ? "Close" : "Select"}
       </Button>
     </li>
